@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6B328592-5AF1-4FEA-8F44-AD6A611A134A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>C3198477_C3199596_Assig3</RootNamespace>
+    <AssemblyName>C3198477_C3199596_Assig3</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Accounts\ActivateAccount.aspx" />
+    <Content Include="Accounts\ExerciseAllocation.aspx" />
+    <Content Include="Accounts\ExerciseUpload.aspx" />
+    <Content Include="Accounts\ForgotPassword.aspx" />
+    <Content Include="Accounts\Login.aspx" />
+    <Content Include="Accounts\Logout.aspx" />
+    <Content Include="Accounts\ParentValidation.aspx" />
+    <Content Include="Accounts\ProfileUpdate.aspx" />
+    <Content Include="Accounts\Register.aspx" />
+    <Content Include="App_Data\db_BETTER.mdf" />
+    <Content Include="App_Data\db_BETTER_log.ldf" />
+    <Content Include="Assets\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap.css" />
+    <Content Include="Assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Assets\bootstrap\js\bootstrap.js" />
+    <Content Include="Assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\bootstrap\js\npm.js" />
+    <Content Include="Assets\font-awesome-4.6.1\css\font-awesome.css" />
+    <Content Include="Assets\font-awesome-4.6.1\css\font-awesome.min.css" />
+    <Content Include="Assets\font-awesome-4.6.1\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\font-awesome-4.6.1\HELP-US-OUT.txt" />
+    <Content Include="Assets\Images\00003.png" />
+    <Content Include="Assets\Images\banner.png" />
+    <Content Include="Assets\Images\Buttons\allocatepoints.png" />
+    <Content Include="Assets\Images\Buttons\buildmonsters.png" />
+    <Content Include="Assets\Images\Buttons\challengeroom.png" />
+    <Content Include="Assets\Images\Buttons\halloffame.png" />
+    <Content Include="Assets\Images\00004.png" />
+    <Content Include="Assets\Images\00001.png" />
+    <Content Include="Assets\Images\Logo-bar.ico" />
+    <Content Include="Assets\Images\Logo.png" />
+    <Content Include="Assets\Images\no-image.png" />
+    <Content Include="Assets\Images\00002.png" />
+    <Content Include="Assets\Style.css" />
+    <Content Include="Battles\Battle.aspx" />
+    <Content Include="Battles\BattleOutcome.aspx" />
+    <Content Include="Battles\BattleSummary.aspx" />
+    <Content Include="Battles\Challenge.aspx" />
+    <Content Include="Characters\CharacterManagement.aspx" />
+    <Content Include="Characters\CharacterSelection.aspx" />
+    <Content Include="HallOfFame.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="Welcome.aspx" />
+    <Content Include="Assets\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Assets\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Assets\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Assets\font-awesome-4.6.1\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\font-awesome-4.6.1\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\font-awesome-4.6.1\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\font-awesome-4.6.1\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\font-awesome-4.6.1\fonts\FontAwesome.otf" />
+    <Content Include="Assets\font-awesome-4.6.1\less\animated.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\bordered-pulled.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\core.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\fixed-width.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\font-awesome.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\icons.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\larger.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\list.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\mixins.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\path.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\rotated-flipped.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\screen-reader.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\stacked.less" />
+    <Content Include="Assets\font-awesome-4.6.1\less\variables.less" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\font-awesome.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_animated.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_bordered-pulled.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_core.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_fixed-width.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_icons.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_larger.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_list.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_mixins.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_path.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_rotated-flipped.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_screen-reader.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_stacked.scss" />
+    <Content Include="Assets\font-awesome-4.6.1\scss\_variables.scss" />
+    <Content Include="Accounts\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.2.3.js" />
+    <Content Include="Scripts\jquery-2.2.3.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-2.2.3.min.map" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Accounts\ActivateAccount.aspx.cs">
+      <DependentUpon>ActivateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\ActivateAccount.aspx.designer.cs">
+      <DependentUpon>ActivateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\ExerciseAllocation.aspx.cs">
+      <DependentUpon>ExerciseAllocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\ExerciseAllocation.aspx.designer.cs">
+      <DependentUpon>ExerciseAllocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\ExerciseUpload.aspx.cs">
+      <DependentUpon>ExerciseUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\ExerciseUpload.aspx.designer.cs">
+      <DependentUpon>ExerciseUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\ParentValidation.aspx.cs">
+      <DependentUpon>ParentValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\ParentValidation.aspx.designer.cs">
+      <DependentUpon>ParentValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\ProfileUpdate.aspx.cs">
+      <DependentUpon>ProfileUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\ProfileUpdate.aspx.designer.cs">
+      <DependentUpon>ProfileUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Accounts\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Accounts\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Battles\Battle.aspx.cs">
+      <DependentUpon>Battle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Battles\Battle.aspx.designer.cs">
+      <DependentUpon>Battle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Battles\BattleOutcome.aspx.cs">
+      <DependentUpon>BattleOutcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Battles\BattleOutcome.aspx.designer.cs">
+      <DependentUpon>BattleOutcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Battles\BattleSummary.aspx.cs">
+      <DependentUpon>BattleSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Battles\BattleSummary.aspx.designer.cs">
+      <DependentUpon>BattleSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Battles\Challenge.aspx.cs">
+      <DependentUpon>Challenge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Battles\Challenge.aspx.designer.cs">
+      <DependentUpon>Challenge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Characters\CharacterManagement.aspx.cs">
+      <DependentUpon>CharacterManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Characters\CharacterManagement.aspx.designer.cs">
+      <DependentUpon>CharacterManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Characters\CharacterSelection.aspx.cs">
+      <DependentUpon>CharacterSelection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Characters\CharacterSelection.aspx.designer.cs">
+      <DependentUpon>CharacterSelection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HallOfFame.aspx.cs">
+      <DependentUpon>HallOfFame.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HallOfFame.aspx.designer.cs">
+      <DependentUpon>HallOfFame.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Scripts\" />
+    <Folder Include="Assets\User_Upload\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{c9dc67ca-0acb-45e6-aef0-0e129c66426c}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataTransactionObjects\DataTransactionObjects.csproj">
+      <Project>{82ff0212-5cc3-4f6e-863b-5392f88363f3}</Project>
+      <Name>DataTransactionObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7926/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
